@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     "todos.apps.TodosConfig",
     "crispy_forms",
     "crispy_bootstrap5",
-    "debug_toolbar",
+    
 ]
 
 MIDDLEWARE = [

@@ -1,0 +1,27 @@
+{% extends 'padrao.html' %}
+
+
+{% block titulo %}
+  Cadastro de usuário
+{% endblock %}
+
+
+{% block subtitulo %}
+  Cadastro de usuário
+{% endblock %}
+
+
+{% block conteudo %}
+  <form method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="usuario">Endereço de email</label>
+      <input type="text" class="form-control" id="usuario" name="usuario" aria-describedby="emailHelp" placeholder="Seu usuario" />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Senha</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" name="senha" placeholder="Senha" />
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+{% endblock %}
